@@ -131,7 +131,7 @@ class _ProductsPageState extends State<ProductsPage> {
                   itemCount: fruits.length,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
-                    childAspectRatio: 1 / 1.2,
+                    childAspectRatio: 1.1 / 1.3,
                     crossAxisSpacing: 15,
                     mainAxisSpacing: 15,
                   ),
@@ -142,7 +142,7 @@ class _ProductsPageState extends State<ProductsPage> {
                       price: fruits[index].price,
                       backgroundImage: fruits[index].backgroundImage,
                       imageHeight: MediaQuery.of(context).size.height /7,
-                      imageWidth: MediaQuery.of(context).size.height /7,
+                      imageWidth: MediaQuery.of(context).size.height /8,
                     );
                   })
             ]);
@@ -150,7 +150,7 @@ class _ProductsPageState extends State<ProductsPage> {
             return CustomScrollView(slivers: [
               SliverToBoxAdapter(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 30.0,vertical: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 30 ,vertical: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -233,7 +233,7 @@ class _ProductsPageState extends State<ProductsPage> {
                       price: fruits[index].price,
                       backgroundImage: fruits[index].backgroundImage,
                       imageHeight: MediaQuery.of(context).size.width /7,
-                      imageWidth: MediaQuery.of(context).size.width /7,
+                      imageWidth: MediaQuery.of(context).size.width /8,
                     );
                   })
             ]);

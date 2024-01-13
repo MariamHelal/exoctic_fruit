@@ -374,7 +374,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                     GestureDetector(
                       onTap: (){
-
+                        Navigator.push(context, MaterialPageRoute(builder: (context){
+                          return ProductsPage();
+                        }));
                       },
                       child:const Align(
                         alignment: Alignment.centerLeft,
