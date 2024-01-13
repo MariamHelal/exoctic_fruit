@@ -52,7 +52,7 @@ class _ProductsPageState extends State<ProductsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff2D2D2D),
+      backgroundColor: const Color(0xff2D2D2D),
       body: SafeArea(
         child: LayoutBuilder(builder: (context , constraints ) {
           if(constraints.maxWidth <500){
@@ -71,7 +71,7 @@ class _ProductsPageState extends State<ProductsPage> {
                             onTap: (){
                               Navigator.pop(context);
                             },
-                            child: CircleAvatar(
+                            child: const CircleAvatar(
                               backgroundColor: Colors.white,
                               radius: 15,
                               child: Icon(Icons.arrow_back_outlined,color: Colors.black,),
@@ -79,7 +79,7 @@ class _ProductsPageState extends State<ProductsPage> {
                           ),
                           SizedBox(height: MediaQuery.of(context).size.height /44,),
                           Row(
-                            children: [
+                            children: const [
                               Text('PREMIUM ',
                                 style: TextStyle(
                                     color: Color(0xffA2B859)
@@ -100,19 +100,19 @@ class _ProductsPageState extends State<ProductsPage> {
                             ),
                             height: 65,
                             //MediaQuery.of(context).size.height *0.08
-                            margin: EdgeInsets.only(top: 20),
-                            padding: EdgeInsets.all(8),
+                            margin: const EdgeInsets.only(top: 20),
+                            padding: const EdgeInsets.all(8),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
+                              children: const [
                                 Text('10',),
                                 Text('Product'),
 
                               ],
                             ),
                           ),
-                          Badge(
+                          const Badge(
                             smallSize: 10,
                             backgroundColor: Color(0xffA2B859),
                             child: CircleAvatar(
@@ -129,7 +129,7 @@ class _ProductsPageState extends State<ProductsPage> {
               ),
               SliverGrid.builder(
                   itemCount: fruits.length,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     childAspectRatio: 1.1 / 1.3,
                     crossAxisSpacing: 15,
@@ -162,7 +162,7 @@ class _ProductsPageState extends State<ProductsPage> {
                             onTap: (){
                               Navigator.pop(context);
                             },
-                            child: CircleAvatar(
+                            child: const CircleAvatar(
                               backgroundColor: Colors.white,
                               radius: 15,
                               child: Icon(Icons.arrow_back_outlined,color: Colors.black,),
@@ -170,7 +170,7 @@ class _ProductsPageState extends State<ProductsPage> {
                           ),
                           SizedBox(height: MediaQuery.of(context).size.height /44,),
                           Row(
-                            children: [
+                            children: const [
                               Text('PREMIUM ',
                                 style: TextStyle(
                                     color: Color(0xffA2B859)
@@ -191,19 +191,19 @@ class _ProductsPageState extends State<ProductsPage> {
                             ),
                             height: 65,
                             //MediaQuery.of(context).size.height *0.08
-                            margin: EdgeInsets.only(top: 20),
-                            padding: EdgeInsets.all(8),
+                            margin: const EdgeInsets.only(top: 20),
+                            padding: const EdgeInsets.all(8),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
+                              children: const [
                                 Text('10',),
                                 Text('Product'),
 
                               ],
                             ),
                           ),
-                          Badge(
+                          const Badge(
                             smallSize: 10,
                             backgroundColor: Color(0xffA2B859),
                             child: CircleAvatar(
@@ -220,7 +220,7 @@ class _ProductsPageState extends State<ProductsPage> {
               ),
               SliverGrid.builder(
                   itemCount: fruits.length,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 4,
                     childAspectRatio: 1 / 1.1,
                     crossAxisSpacing: 15,

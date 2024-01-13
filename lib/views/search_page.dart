@@ -9,20 +9,19 @@ class SearchPage extends StatefulWidget {
 
 class _SearchPageState extends State<SearchPage> {
   var searchController = TextEditingController();
-  // String selectedRadio = '';
-  // String selectedRadioTile = '';
+
   @override
   Widget build(BuildContext context) {
     return  Center(
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 30),
+        margin: const EdgeInsets.symmetric(horizontal: 30),
         height: 60,
         decoration: BoxDecoration(
-            color: Color(0xff636566),
+            color: const Color(0xff636566),
             borderRadius: BorderRadius.circular(20)
         ),
         child: TextFormField(
-          cursorColor: Color(0xffA2B859),
+          cursorColor: const Color(0xffA2B859),
 
           //textDirection: TextDirection.rtl,
           controller: searchController,
@@ -30,7 +29,7 @@ class _SearchPageState extends State<SearchPage> {
           onFieldSubmitted: (value) {
             print(value);
           },
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white
           ),
           strutStyle: StrutStyle(

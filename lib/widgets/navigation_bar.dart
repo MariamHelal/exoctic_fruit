@@ -33,18 +33,18 @@ class _NavigationBarWidgetState extends State<NavigationBarWidget>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff2D2D2D),
+      backgroundColor: const Color(0xff2D2D2D),
       bottomNavigationBar: Container(
-        padding: EdgeInsets.only(left: 30,right: 30,bottom: 30),
+        padding: const EdgeInsets.only(left: 30,right: 30,bottom: 30),
         child: ClipRRect(
-          borderRadius: BorderRadius.all(Radius.circular(50)),
+          borderRadius: const BorderRadius.all(Radius.circular(50)),
           child: Container(
             height: 70,
             color: Colors.black54,
             child: TabBar(
-                unselectedLabelColor: Color(0xff636566),
-                labelColor: Color(0xffA08117),
-                labelStyle: TextStyle(fontSize:9,),
+                unselectedLabelColor: const Color(0xff636566),
+                labelColor: const Color(0xffA08117),
+                labelStyle: const TextStyle(fontSize:9,),
                 // indicator: UnderlineTabIndicator(
                 //   borderSide: BorderSide(
                 //     color: Colors.black54,
@@ -53,7 +53,7 @@ class _NavigationBarWidgetState extends State<NavigationBarWidget>
                 // ),
                 indicatorColor: Colors.black54,
                 controller: _tabController,
-                tabs: [
+                tabs: const [
                   Tab(
                     icon: CircleAvatar(
                       backgroundColor: Color(0xff636566),
@@ -85,7 +85,7 @@ class _NavigationBarWidgetState extends State<NavigationBarWidget>
         controller: _tabController,
         children: [
           HomePage(),
-          SearchPage(),
+          const SearchPage(),
           ProductsPage(),
         ],
       ),

@@ -23,9 +23,9 @@ class FruitCard extends StatelessWidget {
               alignment: Alignment.bottomRight,
               children: [
                 Container(
-                  margin: EdgeInsets.only(top: 70),
-                  padding: EdgeInsets.symmetric(horizontal: 25),
-                  decoration: BoxDecoration(
+                  margin: const EdgeInsets.only(top: 70),
+                  padding: const EdgeInsets.symmetric(horizontal: 25),
+                  decoration: const BoxDecoration(
                       color: Color(0xff626466),
                       borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20),
                           bottomLeft:  Radius.circular(20),bottomRight:  Radius.circular(70)
@@ -43,25 +43,25 @@ class FruitCard extends StatelessWidget {
                             height: MediaQuery.of(context).size.height /35,
                           ),
                           Text(name.toString(),
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: Colors.white
                             ),
                           ),
                           Expanded(
                             child: Row(
                               children: [
-                                Text('PREMIUM ',
+                                const Text('PREMIUM ',
                                   style: TextStyle(
                                       color: Color(0xffA2B859)
                                   ),
                                 ),
-                                Icon(Icons.ac_unit_outlined,color: Color(0xffA2B859),size: 15,)
+                                const Icon(Icons.ac_unit_outlined,color: Color(0xffA2B859),size: 15,)
                               ],
                             ),
                           ),
                           Expanded(
                             child: Text('€${price.toString()}',
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: Colors.white
                               ),
                             ),
@@ -77,7 +77,7 @@ class FruitCard extends StatelessWidget {
                       return ProductDetailsPage(backgroundImage: backgroundImage, name: name,);
                     }));
                   },
-                  child: CircleAvatar(
+                  child: const CircleAvatar(
                     backgroundColor: Colors.white,
                     radius: 15,
                     child: Icon(Icons.arrow_forward_rounded,color: Colors.black,),

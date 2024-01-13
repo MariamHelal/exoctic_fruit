@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../models/fruit_card_model.dart';
 import '../widgets/fruit_card.dart';
-import '../widgets/navigation_bar.dart';
-//import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 
 class HomePage extends StatefulWidget {
    HomePage({super.key});
@@ -36,19 +35,19 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CircleAvatar(
-                    backgroundColor: Color(0xff636566),
+                    backgroundColor: const Color(0xff636566),
                     radius: 71,
                     child: CircleAvatar(
-                      backgroundColor: Color(0xff2D2D2D),
+                      backgroundColor: const Color(0xff2D2D2D),
                       radius: 70,
                       child: CircleAvatar(
-                        backgroundColor: Color(0xffA08117),
+                        backgroundColor: const Color(0xffA08117),
                         radius: 46,
                         child: CircleAvatar(
-                          backgroundColor: Color(0xff2D2D2D),
+                          backgroundColor: const Color(0xff2D2D2D),
                           radius: 45,
                           child: CircleAvatar(
-                            backgroundColor: Color(0xffA08117),
+                            backgroundColor: const Color(0xffA08117),
                             radius: 25,
                             child: Padding(
                               padding: const EdgeInsets.all(2.0),
@@ -75,19 +74,19 @@ class _HomePageState extends State<HomePage> {
                           ),
                           height: 65,
                           //MediaQuery.of(context).size.height *0.08
-                          margin: EdgeInsets.only(top: 20),
-                          padding: EdgeInsets.all(8),
+                          margin: const EdgeInsets.only(top: 20),
+                          padding: const EdgeInsets.all(8),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
+                            children: const [
                               Text('10',),
                               Text('Product'),
 
                             ],
                           ),
                         ),
-                        Badge(
+                        const Badge(
                           smallSize: 10,
                           backgroundColor: Color(0xffA2B859),
                           child: CircleAvatar(
@@ -101,8 +100,8 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30.0),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30.0),
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Text('Exotic',style: TextStyle(
@@ -144,11 +143,11 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 height: MediaQuery.of(context).size.height / 3.6,
                 child: ListView.builder(
                     itemCount: fruits.length,
-                    physics:  BouncingScrollPhysics(),
+                    physics:  const BouncingScrollPhysics(),
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context,index){
                       return FruitCard(
@@ -200,7 +199,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Container(
                         // padding: EdgeInsets.symmetric(horizontal: 16),
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             color: Color(0xff626466),
                             borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20),
                                 bottomLeft:  Radius.circular(20),bottomRight:  Radius.circular(70))
@@ -217,7 +216,7 @@ class _HomePageState extends State<HomePage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Guava  ',
+                              const Text('Guava  ',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
@@ -226,7 +225,7 @@ class _HomePageState extends State<HomePage> {
 
 
                               Row(
-                                children: [
+                                children: const [
                                   Text('PREMIUM ',
                                     style: TextStyle(
                                       color: Color(0xffA2B859),
@@ -243,7 +242,7 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                           Column(
-                            children: [
+                            children: const [
                               Text(' €2.75',
                                 style: TextStyle(
                                     color: Colors.white,
@@ -262,7 +261,7 @@ class _HomePageState extends State<HomePage> {
                         ],
                       ),
                       ),
-                      CircleAvatar(
+                      const CircleAvatar(
                         backgroundColor: Colors.white,
                         radius: 15,
                         child: Icon(Icons.arrow_forward_rounded,color: Colors.black,),
@@ -283,19 +282,19 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CircleAvatar(
-                    backgroundColor: Color(0xff636566),
+                    backgroundColor: const Color(0xff636566),
                     radius: 71,
                     child: CircleAvatar(
-                      backgroundColor: Color(0xff2D2D2D),
+                      backgroundColor: const Color(0xff2D2D2D),
                       radius: 70,
                       child: CircleAvatar(
-                        backgroundColor: Color(0xffA08117),
+                        backgroundColor: const Color(0xffA08117),
                         radius: 46,
                         child: CircleAvatar(
-                          backgroundColor: Color(0xff2D2D2D),
+                          backgroundColor: const Color(0xff2D2D2D),
                           radius: 45,
                           child: CircleAvatar(
-                            backgroundColor: Color(0xffA08117),
+                            backgroundColor: const Color(0xffA08117),
                             radius: 25,
                             child: Padding(
                               padding: const EdgeInsets.all(2.0),
@@ -322,19 +321,19 @@ class _HomePageState extends State<HomePage> {
                           ),
                           height: 65,
                           //MediaQuery.of(context).size.height *0.08
-                          margin: EdgeInsets.only(top: 20),
-                          padding: EdgeInsets.all(8),
+                          margin: const EdgeInsets.only(top: 20),
+                          padding: const EdgeInsets.all(8),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
+                            children: const [
                               Text('10',),
                               Text('Product'),
 
                             ],
                           ),
                         ),
-                        Badge(
+                        const Badge(
                           smallSize: 10,
                           backgroundColor: Color(0xffA2B859),
                           child: CircleAvatar(
@@ -348,8 +347,8 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30.0),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30.0),
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Text('Exotic',style: TextStyle(
@@ -391,11 +390,11 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 height: MediaQuery.of(context).size.width / 3.6,
                 child: ListView.builder(
                     itemCount: fruits.length,
-                    physics:  BouncingScrollPhysics(),
+                    physics:  const BouncingScrollPhysics(),
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context,index){
                       return Stack(
@@ -408,9 +407,9 @@ class _HomePageState extends State<HomePage> {
                                 alignment: Alignment.bottomRight,
                                 children: [
                                   Container(
-                                    margin: EdgeInsets.only(top: 70),
-                                    padding: EdgeInsets.symmetric(horizontal: 25),
-                                    decoration: BoxDecoration(
+                                    margin: const EdgeInsets.only(top: 70),
+                                    padding: const EdgeInsets.symmetric(horizontal: 25),
+                                    decoration: const BoxDecoration(
                                         color: Color(0xff626466),
                                         borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20),
                                             bottomLeft:  Radius.circular(20),bottomRight:  Radius.circular(70)
@@ -428,13 +427,13 @@ class _HomePageState extends State<HomePage> {
                                               height: MediaQuery.of(context).size.height /35,
                                             ),
                                             Text('${fruits[index].name}',
-                                              style: TextStyle(
+                                              style: const TextStyle(
                                                   color: Colors.white
                                               ),
                                             ),
                                             Expanded(
                                               child: Row(
-                                                children: [
+                                                children: const [
                                                   Text('PREMIUM ',
                                                     style: TextStyle(
                                                         color: Color(0xffA2B859)
@@ -446,7 +445,7 @@ class _HomePageState extends State<HomePage> {
                                             ),
                                             Expanded(
                                               child: Text('€${fruits[index].price.toString()}',
-                                                style: TextStyle(
+                                                style: const TextStyle(
                                                     color: Colors.white
                                                 ),
                                               ),
@@ -463,7 +462,7 @@ class _HomePageState extends State<HomePage> {
                                           name: fruits[index].name,);
                                       }));
                                     },
-                                    child: CircleAvatar(
+                                    child: const CircleAvatar(
                                       backgroundColor: Colors.white,
                                       radius: 15,
                                       child: Icon(Icons.arrow_forward_rounded,color: Colors.black,),
@@ -521,7 +520,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Container(
                         // padding: EdgeInsets.symmetric(horizontal: 16),
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             color: Color(0xff626466),
                             borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20),
                                 bottomLeft:  Radius.circular(20),bottomRight:  Radius.circular(70))
@@ -538,7 +537,7 @@ class _HomePageState extends State<HomePage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Guava  ',
+                              const Text('Guava  ',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 20,
@@ -547,7 +546,7 @@ class _HomePageState extends State<HomePage> {
 
 
                               Row(
-                                children: [
+                                children: const [
                                   Text('PREMIUM ',
                                     style: TextStyle(
                                       color: Color(0xffA2B859),
@@ -564,7 +563,7 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                           Column(
-                            children: [
+                            children: const [
                               Text(' €2.75',
                                 style: TextStyle(
                                     color: Colors.white,
@@ -583,7 +582,7 @@ class _HomePageState extends State<HomePage> {
                         ],
                       ),
                       ),
-                      CircleAvatar(
+                      const CircleAvatar(
                         backgroundColor: Colors.white,
                         radius: 15,
                         child: Icon(Icons.arrow_forward_rounded,color: Colors.black,),

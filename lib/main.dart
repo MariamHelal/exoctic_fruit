@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'views/home_page.dart';
 import 'widgets/navigation_bar.dart';
-//import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 void main() {
   runApp(const ExoticFruitApp());
 }
@@ -11,7 +9,7 @@ class ExoticFruitApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: NavigationBarWidget(),
     );

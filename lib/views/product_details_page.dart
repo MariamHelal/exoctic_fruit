@@ -1,4 +1,3 @@
-import 'package:circular_reveal_animation/circular_reveal_animation.dart';
 import 'package:flutter/material.dart';
 
 class ProductDetailsPage extends StatelessWidget {
@@ -36,7 +35,7 @@ class ProductDetailsPage extends StatelessWidget {
                               onTap: (){
                                 Navigator.pop(context);
                               },
-                              child: CircleAvatar(
+                              child: const CircleAvatar(
                                 backgroundColor: Colors.white,
                                 radius: 15,
                                 child: Icon(Icons.arrow_back_outlined,color: Colors.black,),
@@ -44,7 +43,7 @@ class ProductDetailsPage extends StatelessWidget {
                             ),
                             SizedBox(height: MediaQuery.of(context).size.height /44,),
                             Row(
-                              children: [
+                              children: const [
                                 Text('PREMIUM ',
                                   style: TextStyle(
                                       color: Color(0xffA2B859)
@@ -65,19 +64,19 @@ class ProductDetailsPage extends StatelessWidget {
                               ),
                               height: 65,
                               //MediaQuery.of(context).size.height *0.08
-                              margin: EdgeInsets.only(top: 20),
-                              padding: EdgeInsets.all(8),
+                              margin: const EdgeInsets.only(top: 20),
+                              padding: const EdgeInsets.all(8),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                                children: const [
                                   Text('10',),
                                   Text('Product'),
 
                                 ],
                               ),
                             ),
-                            Badge(
+                            const Badge(
                               smallSize: 10,
                               backgroundColor: Color(0xffA2B859),
                               child: CircleAvatar(
@@ -91,8 +90,8 @@ class ProductDetailsPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 30.0),
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text('Exotic fruits',style: TextStyle(
@@ -106,7 +105,7 @@ class ProductDetailsPage extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 30.0),
                     child: Align(
                       alignment: Alignment.centerLeft,
-                      child: Text(name,style: TextStyle(
+                      child: Text(name,style: const TextStyle(
                           color: Colors.white,
                           fontSize: 30,
                           fontWeight: FontWeight.w300
@@ -114,7 +113,7 @@ class ProductDetailsPage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding:  EdgeInsets.symmetric(horizontal: 30,vertical: 20),
+                    padding:  const EdgeInsets.symmetric(horizontal: 30,vertical: 20),
                     child: Align(
                       //widthFactor: MediaQuery.of(context).size.width/2.5,
                       alignment: Alignment.centerLeft,
@@ -123,17 +122,17 @@ class ProductDetailsPage extends StatelessWidget {
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.transparent, // Background color of the button
-                          primary: Color(0xffA2B859), // Text color
-                          padding: EdgeInsets.symmetric(horizontal: 30.0),
+                          primary: const Color(0xffA2B859), // Text color
+                          padding: const EdgeInsets.symmetric(horizontal: 30.0),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(16.0), // Border radius
-                            side:  BorderSide(
+                            side:  const BorderSide(
                               color: Color(0xffA2B859),
                               width: .5,
                             ), // Border color
                           ),
                         ),
-                        child: Text('Nutrition',style: TextStyle(
+                        child: const Text('Nutrition',style: TextStyle(
                             color: Color(0xffA2B859)
                         ),),
 
@@ -151,8 +150,8 @@ class ProductDetailsPage extends StatelessWidget {
                       ),
                       height: MediaQuery.of(context).size.height *0.14,
                       //
-                      margin: EdgeInsets.only(right: 30,bottom: 30),
-                      padding: EdgeInsets.symmetric(horizontal: 12),
+                      margin: const EdgeInsets.only(right: 30,bottom: 30),
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -160,13 +159,13 @@ class ProductDetailsPage extends StatelessWidget {
                           CircleAvatar(
                             radius: MediaQuery.of(context).size.aspectRatio *50,
                             backgroundColor: Colors.black,
-                            child: Icon(
+                            child: const Icon(
                               Icons.shopping_cart_outlined,color: Colors.white,
                             ),
                           ),
-                          SizedBox(height: 5,),
-                          Text('Add to ',),
-                          Text('Order'),
+                          const SizedBox(height: 5,),
+                          const Text('Add to ',),
+                          const Text('Order'),
 
                         ],
                       ),
@@ -195,12 +194,12 @@ class ProductDetailsPage extends StatelessWidget {
                               child: CircleAvatar(
                                 backgroundColor: Colors.white,
                                 radius: MediaQuery.of(context).size.aspectRatio *10,
-                                child: Icon(Icons.arrow_back_outlined,color: Colors.black,),
+                                child: const Icon(Icons.arrow_back_outlined,color: Colors.black,),
                               ),
                             ),
                             SizedBox(height: MediaQuery.of(context).size.height /44,),
                             Row(
-                              children: [
+                              children: const [
                                 Text('PREMIUM ',
                                   style: TextStyle(
                                       color: Color(0xffA2B859)
@@ -221,12 +220,12 @@ class ProductDetailsPage extends StatelessWidget {
                               ),
                               height: MediaQuery.of(context).size.width *0.08,
                               //MediaQuery.of(context).size.height *0.08
-                              margin: EdgeInsets.only(top: 20),
-                              padding: EdgeInsets.all(8),
+                              margin: const EdgeInsets.only(top: 20),
+                              padding: const EdgeInsets.all(8),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                                children: const [
                                   Text('10',),
                                   Text('Product'),
 
@@ -235,11 +234,11 @@ class ProductDetailsPage extends StatelessWidget {
                             ),
                             Badge(
                               smallSize: 10,
-                              backgroundColor: Color(0xffA2B859),
+                              backgroundColor: const Color(0xffA2B859),
                               child: CircleAvatar(
                                 backgroundColor: Colors.black,
                                 radius: MediaQuery.of(context).size.aspectRatio* 8,
-                                child: Icon(Icons.shopify_outlined,color: Colors.white,),
+                                child: const Icon(Icons.shopify_outlined,color: Colors.white,),
                               ),
                             )
                           ],
@@ -247,8 +246,8 @@ class ProductDetailsPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 30.0),
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text('Exotic fruits',style: TextStyle(
@@ -262,7 +261,7 @@ class ProductDetailsPage extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 30.0),
                     child: Align(
                       alignment: Alignment.centerLeft,
-                      child: Text(name,style: TextStyle(
+                      child: Text(name,style: const TextStyle(
                           color: Colors.white,
                           fontSize: 30,
                           fontWeight: FontWeight.w300
@@ -270,7 +269,7 @@ class ProductDetailsPage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding:  EdgeInsets.symmetric(horizontal: 30,vertical: 20),
+                    padding:  const EdgeInsets.symmetric(horizontal: 30,vertical: 20),
                     child: Align(
                       //widthFactor: MediaQuery.of(context).size.width/2.5,
                       alignment: Alignment.centerLeft,
@@ -279,17 +278,17 @@ class ProductDetailsPage extends StatelessWidget {
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.transparent, // Background color of the button
-                          primary: Color(0xffA2B859), // Text color
-                          padding: EdgeInsets.symmetric(horizontal: 30.0),
+                          primary: const Color(0xffA2B859), // Text color
+                          padding: const EdgeInsets.symmetric(horizontal: 30.0),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(16.0), // Border radius
-                            side:  BorderSide(
+                            side:  const BorderSide(
                               color: Color(0xffA2B859),
                               width: .5,
                             ), // Border color
                           ),
                         ),
-                        child: Text('Nutrition',style: TextStyle(
+                        child: const Text('Nutrition',style: TextStyle(
                             color: Color(0xffA2B859)
                         ),),
 
@@ -307,8 +306,8 @@ class ProductDetailsPage extends StatelessWidget {
                       ),
                       height: MediaQuery.of(context).size.width *0.14,
                       //
-                      margin: EdgeInsets.only(right: 30),
-                      padding: EdgeInsets.symmetric(horizontal: 12),
+                      margin: const EdgeInsets.only(right: 30),
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -316,13 +315,13 @@ class ProductDetailsPage extends StatelessWidget {
                           CircleAvatar(
                             radius: MediaQuery.of(context).size.aspectRatio *10,
                             backgroundColor: Colors.black,
-                            child: Icon(
+                            child: const Icon(
                               Icons.shopping_cart_outlined,color: Colors.white,
                             ),
                           ),
-                          SizedBox(height: 5,),
-                          Text('Add to ',),
-                          Text('Order'),
+                          const SizedBox(height: 5,),
+                          const Text('Add to ',),
+                          const Text('Order'),
 
                         ],
                       ),
